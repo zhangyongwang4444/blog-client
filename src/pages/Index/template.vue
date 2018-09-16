@@ -8,5 +8,5 @@
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped src="./template.css">
+<style scoped lang="less" src="./template.less">
 </style>
