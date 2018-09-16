@@ -1,6 +1,6 @@
 <template>
   <div id="index">
-    首页
+    <p>首页</p>
   </div>
 </template>
 
@@ -8,5 +8,5 @@
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style src="./template.css">
+<style scoped src="./template.css">
 </style>
