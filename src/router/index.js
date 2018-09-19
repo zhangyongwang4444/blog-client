@@ -18,8 +18,17 @@ export default new Router({
       component: Index
     },
     {
+      path: '/login',
+      component: Login
+    },
+    {
+      path: '/register',
+      component: Register
+    },
+    {
       path: '/create',
-      component: Create
+      component: Create,
+      meta: { requiresAuth: true }
     },
     {
       path: '/detail/:blogId',
@@ -27,23 +36,17 @@ export default new Router({
     },
     {
       path: '/edit/:blogId',
-      component: Edit
+      component: Edit,
+      meta: { requiresAuth: true }
     },
     {
       path: '/my',
-      component: My
-    },
-    {
-      path: '/register',
-      component: Register
+      component: My,
+      meta: { requiresAuth: true }
     },
     {
       path: '/user/:userId',
       component: User
-    },
-    {
-      path: '/login',
-      component: Login
     }
   ]
 })
