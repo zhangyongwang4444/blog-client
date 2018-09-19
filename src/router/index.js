@@ -19,14 +19,14 @@ export default new Router({
     },
     {
       path: '/create',
-      component:  Create
+      component: Create
     },
     {
-      path: '/detail',
-      component:Detail
+      path: '/detail/:blogId',
+      component: Detail
     },
     {
-      path: '/edit',
+      path: '/edit/:blogId',
       component: Edit
     },
     {
@@ -38,7 +38,7 @@ export default new Router({
       component: Register
     },
     {
-      path: '/user',
+      path: '/user/:userId',
       component: User
     },
     {
