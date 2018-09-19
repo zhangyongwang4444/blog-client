@@ -1,20 +1,36 @@
-body{
-    font:14px/1.6 Arial,"Microsoft YaHei","黑体","宋体",sans-serif;
+@import "./base.less";
+
+body {
+    font: 14px/1.6 Arial, "Microsoft YaHei", "黑体", "宋体", sans-serif;
     color: #333;
-    margin:0;
+    margin: 0;
 }
 
-html,body,#app{
-    height:100%;
+html,
+body,
+#app {
+    height: 100%;
 }
 
-.el-button{
-    font-size:13px;
-    color:#006600;
-    height:28px;
-    line-height:28px;
-    padding:0 8px;
+.el-button {
+    font-size: 13px;
+    color: #006600;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 8px;
     border-radius: 4px;
-    font-weight:normal;
-    border:none;
+    font-weight: normal;
+    border: none;
+}
+
+input {
+    line-height: 40px;
+    border: 1px solid #eaeaea;
+    padding: 0 10px;
+    border-radius: 4px;
+    outline: none;
+}
+
+input:focus {
+    border-color: @themeLighterColor;
 }
