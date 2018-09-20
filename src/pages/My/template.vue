@@ -2,7 +2,7 @@
   <div id="my">
     <section class="user-info">
       <img src="http://cn.gravatar.com/avatar/1?s=128&d=identicon" alt="" class="avatar">
-      <h3>若愚</h3>
+      <h3>张永旺</h3>
     </section>
     <section>
       <div class="item">

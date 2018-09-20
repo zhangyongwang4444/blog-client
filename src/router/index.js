@@ -80,6 +80,11 @@ const router = new Router({
       meta: { requiresAuth: true }
     },
     {
+      path: '/detail/:userId',
+      component: () => import('@/pages/Detail/template.vue'),
+      meta: { requiresAuth: true }
+    },
+    {
       path: '/user/:userId',
       component: () => import('@/pages/User/template.vue')
     },
