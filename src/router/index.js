@@ -9,9 +9,12 @@ import My from '@/pages/My/template.vue'
 import Register from '@/pages/Register/template.vue'
 import User from '@/pages/User/template.vue'
 
+import store from '../store'
+window.store = store
+
 Vue.use(Router)
 
-export default new Router({
+const router = new Router({
   routes: [
     {
       path: '/',
@@ -50,3 +53,22 @@ export default new Router({
     }
   ]
 })
+
+router.beforeEach((to, from, next) => {
+  if (to.matched.some(record => record.meta.requiresAuth)) {
+    store.dispatch('checkLogin').then(isLogin => {
+      if (!isLogin) {
+        next({
+          path: '/login',
+          query: { redirect: to.fullPath }
+        })
+      } else {
+        next()
+      }
+    })
+  } else {
+    next() //确保一定要用 next()
+  }
+})
+
+export default router
