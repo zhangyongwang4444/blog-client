@@ -2,7 +2,7 @@ import request from '@/helpers/request'
 
 const URL = {
     REGISTER: '/auth/register',
-    LOGIN: '/anth/login',
+    LOGIN: '/auth/login',
     LOGOUT: '/auth/logout',
     GET_INFO: '/auth'
 }
