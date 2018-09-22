@@ -7,7 +7,10 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import store from './store'
 
+import Util from '@/helpers/util' //引入插件
+
 Vue.use(ElementUI)
+Vue.use(Util) // 安装插件 
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
